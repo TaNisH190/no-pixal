@@ -1,0 +1,563 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --background-color: #ffffff;
+    /* Light mode background */
+    --text-color: #000000;
+    /* Light mode text color */
+    --nav-background: #f0f0f0;
+    /* Light mode nav background */
+    --link-color: #000000;
+    /* Light mode link color */
+    --hover-background: #e0e0e0;
+    /* Light mode hover background */
+
+    --dark-background-color: #171717;
+    /* Dark mode background */
+    --dark-text-color: #c4c2c2;
+    /* Dark mode text color */
+    --dark-nav-background: #121212;
+    /* Dark mode nav background */
+    --dark-link-color: #c4c2c2;
+    /* Dark mode link color */
+    --dark-hover-background: #282727;
+    /* Dark mode hover background */
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+body.light-mode {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+body.dark-mode {
+    background-color: var(--dark-background-color);
+    color: var(--dark-text-color);
+}
+
+.nav {
+    background-color: var(--nav-background);
+}
+
+body.light-mode .nav a {
+    color: var(--link-color);
+}
+
+body.dark-mode .nav {
+    background-color: var(--dark-nav-background);
+}
+
+body.dark-mode .nav a {
+    color: var(--dark-link-color);
+}
+
+.home:hover,
+.for:hover,
+.lelo:hover {
+    background-color: var(--hover-background);
+}
+
+body.light-mode .home:hover,
+body.light-mode .for:hover,
+body.light-mode .lelo:hover {
+    background-color: var(--hover-background);
+}
+
+body.dark-mode .home:hover,
+body.dark-mode .for:hover,
+body.dark-mode .lelo:hover {
+    background-color: var(--dark-hover-background);
+}
+
+/* Add other elements accordingly */
+
+.logo {
+    background-color: #171717;
+    padding: 6px 0;
+    width: 100%;
+    height: 40px;
+}
+
+img {
+    height: 30px;
+    width: auto;
+}
+
+.nav {
+    height: 40px;
+    display: flex;
+    color: #c4c2c2;
+    background-color: #171717;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav a {
+    padding: 8px 15px;
+    color: #c4c2c2;
+    text-decoration: none;
+}
+
+.home {
+    padding: 8px 15px;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+.store {
+    padding: 8px 15px;
+    background-color: #383737a6;
+    font-weight: 700;
+}
+
+.for {
+    padding: 8px 15px;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+.posts {
+    height: 30px;
+    width: 100%;
+    margin: 0;
+    color: #c4c2c2;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#right-items {
+    padding: 8px 10px;
+    color: #c4c2c2;
+    background-color: #2b2b2b;
+    display: inline-block;
+    margin-left: 100px;
+}
+
+#log {
+    padding: 8px 10px 10px 10px;
+    color: #c4c2c2;
+    background-color: #2b2b2b;
+    display: inline-block;
+    margin-left: 800px;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+#reg {
+    padding: 8px 10px 10px 10px;
+    color: #c4c2c2;
+    background-color: #2b2b2b;
+    display: inline-block;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+.page {
+    width: 100%;
+    background-color: #2b2b2b;
+}
+
+.hom {
+    width: 100%;
+    background-color: #171717;
+}
+
+#ho {
+    color: #c4c2c2;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: small;
+}
+
+.wp {
+    padding: 10px 10px 20px 10px;
+    height: 100%;
+    width: 100%;
+    background-color: #171717;
+}
+
+.np {
+    color: #c4c2c2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+
+.np p {
+    font-size: larger;
+    margin-right: 1170px;
+    margin-bottom: 5px;
+}
+
+.np a {
+    text-decoration: none;
+    color: #c4c2c2;
+    padding: 5px 10px 5px 10px;
+    background-color: #383737a6;
+    border: 0px;
+    border-radius: 5%;
+}
+
+#op {
+    justify-content: flex-end;
+    display: flex;
+    text-decoration: none;
+    color: #c4c2c2;
+    padding: 5px 10px 5px 10px;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+.p-body {
+    width: 100%;
+    height: 83%;
+    background-color: #171717;
+    display: flex;
+}
+
+.bar {
+    color: #c4c2c2;
+    background-color: #1f1e1e;
+    width: min-content;
+    text-align: center;
+    font-size: 17px;
+    width: fit-content;
+    text-wrap: wrap;
+    margin-left: -237.5px;
+    padding: 10px;
+    border: 1px solid #333232;
+    border-radius: 1%;
+    height: fit-content;
+}
+
+.bar p {
+    color: #c4c2c2;
+    background-color: #1f1e1e;
+    font-size: 17px;
+    text-align: center;
+    width: fit-content;
+    padding-left: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.dedo {
+    display: inline;
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.rp1 {
+    color: #c4c2c2;
+    background-color: #2b2b2b;
+    text-align: center;
+    text-wrap: wrap;
+    padding: 10px;
+}
+
+.lelo {
+    color: #c4c2c2;
+    background-color: #383737a6;
+    text-wrap: wrap;
+    height: min-content;
+    text-decoration: none;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 0px 0px solid;
+    border-radius: 10%;
+    margin: 10px;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+.end a {
+    color: #c4c2c2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    font-size: 17px;
+    margin-top: 5px;
+    padding-top: 10ox;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    padding: 2px 4px;
+    width: 75%;
+    border-top: 1px solid #c4c2c2;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer i {
+    color: #c4c2c2;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #c4c2c2;
+}
+
+.right {
+    display: inline-flex;
+}
+
+.right ul {
+    margin-left: 530px;
+    padding: 0px;
+}
+
+.chi-chi {
+    margin-top: 35px;
+    margin-left: 410px;
+}
+
+.chi-chi a {
+    color: #c4c2c2;
+    font-size: 11px;
+}
+
+.home:hover {
+    background-color: #282727;
+}
+
+.for:hover {
+    background-color: #282727;
+}
+
+.lelo:hover {
+    background-color: #242323;
+}
+
+.light-mode button {
+    color: #c4c2c2;
+    background-color: #242323;
+    border: 1px solid #242323;
+    border-radius: 5px;
+}
+
+#theme-switch {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 100%;
+    border: none;
+    background-color: #1f1e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#theme-switch:hover {
+    background-color: #383737;
+}
+
+#theme-switch img {
+    height: 24px;
+    width: 24px;
+    display: none;
+    /* Hide both icons by default */
+}
+
+/* Show light mode icon when in light mode */
+body.light-mode #theme-switch .lie {
+    display: block;
+    /* Show light mode icon */
+}
+
+/* Show dark mode icon when in dark mode */
+body.light-mode #theme-switch .dar {
+    display: none;
+    /* Hide dark mode icon */
+}
+
+/* When not in light mode, show dark mode icon */
+body:not(.light-mode) #theme-switch .dar {
+    display: block;
+    /* Show dark mode icon */
+}
+
+/* Hide light mode icon when not in light mode */
+body:not(.light-mode) #theme-switch .lie {
+    display: none;
+    /* Hide light mode icon */
+}
+
+.light-mode {
+    background-color: #ffffff;
+    /* Light background */
+    color: #000000;
+    /* Dark text color */
+}
+
+.light-mode .logo {
+    background-color: #f0f0f0;
+    /* Lighter logo background */
+}
+
+.light-mode .nav {
+    background-color: #f0f0f0;
+    /* Lighter nav background */
+}
+
+.light-mode .nav a {
+    color: #000000;
+    /* Dark link color */
+}
+
+.light-mode .posts {
+    color: #000000;
+    /* Dark text color for posts */
+}
+
+.light-mode #right-items,
+.light-mode #log,
+.light-mode #reg {
+    background-color: #e0e0e0;
+    /* Lighter background for these elements */
+    color: #000000;
+    /* Dark text color */
+}
+
+.light-mode .page,
+.light-mode .wp,
+.light-mode .hom {
+    background-color: #ffffff;
+    /* Light background */
+}
+
+.light-mode .bar {
+    background-color: #f8f8f8;
+    /* Lighter bar background */
+    border: 1px solid #cccccc;
+    /* Light border */
+}
+
+.light-mode .footer {
+    border-top: 1px solid #cccccc;
+    /* Light border for footer */
+}
+
+.light-mode .footer a {
+    color: #000000;
+    /* Dark footer links */
+}
+
+.light-mode .home:hover,
+.light-mode .for:hover,
+.light-mode .lelo:hover {
+    background-color: #e0e0e0;
+    /* Lighter hover effect */
+}
+
+.light-mode .dark-mode button {
+    background-color: #f0f0f0;
+    /* Light button background */
+    border: 1px solid #f0f0f0;
+    /* Light button border */
+}
+
+.dark-mode {
+    background-color: #171717;
+    /* Dark background */
+    color: #c4c2c2;
+    /* Light text color */
+}
+
+.dark-mode .logo {
+    background-color: #121212;
+    /* Darker logo background */
+}
+
+.dark-mode .nav {
+    background-color: #121212;
+    /* Darker nav background */
+}
+
+.dark-mode .nav a {
+    color: #c4c2c2;
+    /* Light link color */
+}
+
+.dark-mode .posts {
+    color: #c4c2c2;
+    /* Light text color for posts */
+}
+
+.dark-mode #right-items,
+.dark-mode #log,
+.dark-mode #reg {
+    background-color: #2b2b2b;
+    /* Darker background for these elements */
+    color: #c4c2c2;
+    /* Light text color */
+}
+
+.dark-mode .page,
+.dark-mode .wp,
+.dark-mode .hom {
+    background-color: #171717;
+    /* Dark background */
+}
+
+.dark-mode .bar {
+    background-color: #1f1e1e;
+    /* Darker bar background */
+    border: 1px solid #333232;
+    /* Dark border */
+}
+
+.dark-mode .footer {
+    border-top: 1px solid #c4c2c2;
+    /* Light border for footer */
+}
+
+.dark-mode .footer a {
+    color: #c4c2c2;
+    /* Light footer links */
+}
+
+.dark-mode .home:hover,
+.dark-mode .for:hover,
+.dark-mode .lelo:hover {
+    background-color: #282727;
+    /* Darker hover effect */
+}
+
+.dark-mode #theme-switch {
+    background-color: #1f1e1e;
+    /* Darker button background */
+}
+
+.dark-mode #theme-switch:hover {
+    background-color: #383737;
+    /* Darker hover effect for button */
+}
